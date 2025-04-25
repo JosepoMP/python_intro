@@ -1,3 +1,4 @@
+# ejercicio 2 
 edad = int(input("¿Cuantos años tienes?"))
 pase = input("¿Tienes pase dorado?:")
 

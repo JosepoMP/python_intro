@@ -12,8 +12,6 @@ def convertir_a_numero(entrada):
         return int(entrada)
     finally: print  ("")
 
-'''python'''
-
 # DATOS DE ENTRADA
 
 # Producto

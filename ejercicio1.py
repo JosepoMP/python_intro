@@ -1,3 +1,4 @@
+# ejercicio 1 
 numero=int (input("dame cualquier numero: "))
 
 if numero % 3 == 0 and numero % 5 == 0:

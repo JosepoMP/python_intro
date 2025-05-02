@@ -92,7 +92,7 @@ while True:
         print("❌ Error: Verifica que los datos sean números válidos.")
  ```
        
-# Ejercicio 4 | Verificar y contar calificaciones específicas
+# Ejercicio 4 
 
 ```python
 # Ejercicio 4 | Verificar y contar calificaciones específicas

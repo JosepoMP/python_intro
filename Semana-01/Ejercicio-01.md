@@ -1,4 +1,4 @@
-Ejercicio "Fizz Buzz" 📚
+# Ejercicio "Fizz Buzz" 📚
 ```python
 # ejercicio 1
 

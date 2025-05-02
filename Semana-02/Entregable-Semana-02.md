@@ -1,8 +1,6 @@
 # Entrgeable 02
-
+# Ejercicio 1 
 ```python
-# Entregable Semana 2 
-
 # EJERCICIO 1 | Determinar estado de aprobación
 while True:
         try:
@@ -22,9 +20,9 @@ while True:
 
 ```
 
-# Ejercicio 2
-
+# Ejercicio 2 
 ```python
+# Ejercicio 2 | Calcular el promedio 
 while True:
     try:
         entrada = input("\nIngresa una lista de calificaciones separadas por comas (ej: 80,90,100): ")
@@ -52,13 +50,13 @@ while True:
     except ValueError:
         # Mensaje si hay un error de conversión o si alguna calificación no es válida1
         print("❌ Error: Asegúrate de ingresar solo números válidos separados por comas.")
-``
+```
         
 
 #Ejercicio 3
 
 ```python
-# Ejercicio | Contar calificaciones mayores que un valor específico
+# Ejercicio 3 | Contar calificaciones mayores que un valor específico
 
 while True:
     try:
@@ -92,11 +90,12 @@ while True:
 
     except ValueError:
         print("❌ Error: Verifica que los datos sean números válidos.")
- ``
+ ```
        
 # Ejercicio 4 | Verificar y contar calificaciones específicas
 
 ```python
+# Ejercicio 4 | Verificar y contar calificaciones específicas
 while True:
     try:
         # Paso 1: pedir al usuario una lista de calificaciones separadas por comas
@@ -125,7 +124,7 @@ while True:
         # Mostrar el resultado
         print(f"\nLa calificación {objetivo} aparece {repeticiones} veces.")
         break
-
+```
     except ValueError:
         print("❌ Error: Asegúrate de ingresar solo números válidos.")
 ```

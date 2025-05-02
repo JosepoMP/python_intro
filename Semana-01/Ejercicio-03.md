@@ -1,7 +1,7 @@
 # Ejercicio "Mi pareja ideal" 📚  
 
 ```python
-# Ejercico 03
+# Ejercicio 03
 
 puntaje = 0
 pregunta1 = input("¿eres aseado? ")

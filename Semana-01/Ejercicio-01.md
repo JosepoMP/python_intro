@@ -1,4 +1,7 @@
-# ejercicio 1 
+Ejercicio "Fizz Buzz" 📚
+```python
+# ejercicio 1
+
 numero=int (input("dame cualquier numero: "))
 
 if numero % 3 == 0 and numero % 5 == 0:
@@ -9,4 +12,4 @@ elif numero % 5 == 0:
     print("buzz",)
 else: 
     print(numero)
-
+```

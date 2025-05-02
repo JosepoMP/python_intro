@@ -1,2 +1,3 @@
 # python_intro
-Aqui estan mis ejercicios basicos 
+¡Hola 👋! Soy Jose 
+Y aqui podras encontrar todos mis ejercicios basicos 

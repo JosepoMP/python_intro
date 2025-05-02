@@ -53,7 +53,7 @@ while True:
 ```
         
 
-#Ejercicio 3
+# Ejercicio 3
 
 ```python
 # Ejercicio 3 | Contar calificaciones mayores que un valor específico
@@ -124,7 +124,7 @@ while True:
         # Mostrar el resultado
         print(f"\nLa calificación {objetivo} aparece {repeticiones} veces.")
         break
-```
+
     except ValueError:
         print("❌ Error: Asegúrate de ingresar solo números válidos.")
 ```

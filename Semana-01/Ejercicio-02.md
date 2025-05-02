@@ -1,4 +1,4 @@
-# Ejercico 02 📚
+# Ejercicio 02 📚
 
 ```python
 # ejercicio 2 

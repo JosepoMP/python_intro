@@ -1,4 +1,4 @@
-# Entrgeable 02
+# Entregable 02
 # Ejercicio 1 
 ```python
 # EJERCICIO 1 | Determinar estado de aprobación

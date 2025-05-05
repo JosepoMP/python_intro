@@ -20,9 +20,10 @@ def agregar_animal(nombres, edades, salud):
     print(f"{nombre} ha sido agregado al registro")
 
 ```
+
+# 2. Eliminar un animal por su nombre:
+# El usuario debe poder ingresar el nombre del animal que desea eliminar. Si el animal está registrado, debe ser removido de las tres listas. Si el animal no está registrado, se debe mostrar un mensaje indicando que no se encontró.
 ```python
-#2. Eliminar un animal por su nombre:
-#El usuario debe poder ingresar el nombre del animal que desea eliminar. Si el animal está registrado, debe ser removido de las tres listas. Si el animal no está registrado, se debe mostrar un mensaje indicando que no se encontró.
 
 # Eliminar animal
 
@@ -41,8 +42,8 @@ def eliminar_animal(nombres, edades, salud):
 
 ```
         
-#3. Listar todos los animales registrados:
-#El programa debe mostrar una lista con todos los animales registrados, incluyendo su nombre, edad y estado de salud (enfermo/sano).
+# 3. Listar todos los animales registrados:
+# El programa debe mostrar una lista con todos los animales registrados, incluyendo su nombre, edad y estado de salud (enfermo/sano).
 
 ```python
 

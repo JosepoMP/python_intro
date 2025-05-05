@@ -2,7 +2,7 @@
 # La idea de este ejercicio es hacer un programa que permita gestionar informacion sobre animales...
 
 # 1. Agregar un animal:
-#El usuario debe ingresar el nombre, la edad y si el animal está enfermo o no (sí/no). Esta información debe ser almacenada en tres listas separadas: una para los nombres de los animales, otra para sus edades y otra para su estado de salud.
+El usuario debe ingresar el nombre, la edad y si el animal está enfermo o no (sí/no). Esta información debe ser almacenada en tres listas separadas: una para los nombres de los animales, otra para sus edades y otra para su estado de salud.
 
 ```python
 
@@ -22,7 +22,7 @@ def agregar_animal(nombres, edades, salud):
 ```
 
 # 2. Eliminar un animal por su nombre:
-# El usuario debe poder ingresar el nombre del animal que desea eliminar. Si el animal está registrado, debe ser removido de las tres listas. Si el animal no está registrado, se debe mostrar un mensaje indicando que no se encontró.
+El usuario debe poder ingresar el nombre del animal que desea eliminar. Si el animal está registrado, debe ser removido de las tres listas. Si el animal no está registrado, se debe mostrar un mensaje indicando que no se encontró.
 ```python
 
 # Eliminar animal
@@ -43,7 +43,7 @@ def eliminar_animal(nombres, edades, salud):
 ```
         
 # 3. Listar todos los animales registrados:
-# El programa debe mostrar una lista con todos los animales registrados, incluyendo su nombre, edad y estado de salud (enfermo/sano).
+El programa debe mostrar una lista con todos los animales registrados, incluyendo su nombre, edad y estado de salud (enfermo/sano).
 
 ```python
 

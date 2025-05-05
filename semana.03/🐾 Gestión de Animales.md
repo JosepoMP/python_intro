@@ -1,5 +1,5 @@
 # 🐾 Ejercicio: Gestión de Animales
-# Desarrolla un programa en Python que permita gestionar información sobre animales. El programa debe tener un menú usando funciones con las siguientes opciones: ** recuerda que pasa nombre, edad y enfermo cada uno debe de guardarse en su propia lista
+# La idea de este ejercicio es hacer un programa que permita gestionar informacion sobre animales...
 
 # 1. Agregar un animal:
 #El usuario debe ingresar el nombre, la edad y si el animal está enfermo o no (sí/no). Esta información debe ser almacenada en tres listas separadas: una para los nombres de los animales, otra para sus edades y otra para su estado de salud.

@@ -1,13 +1,13 @@
-# jercicio: Registro de Estudiantes
+Registro de Estudiantes
 
 # Objetivo: 
-# Crear un diccionario para almacenar información sobre estudiantes y realizar algunas operaciones básicas como agregar, modificar y mostrar datos.       
+Crear un diccionario para almacenar información sobre estudiantes y realizar algunas operaciones básicas como agregar, modificar y mostrar datos.       
 
-#instrucciones:
+# instrucciones:
 
-    #1. Crea un diccionario llamado estudiantes, donde las claves sean los nombres de los estudiantes y los valores sean otro diccionario con las claves edad y calificacion.
+    1. Crea un diccionario llamado estudiantes, donde las claves sean los nombres de los estudiantes y los valores sean otro diccionario con las claves edad y calificacion.
 
-    #2. El programa debe permitir al usuario realizar las siguientes operaciones:
+    2. El programa debe permitir al usuario realizar las siguientes operaciones:
         #Agregar un nuevo estudiante (nombre, edad, calificación).
         #Modificar la calificación de un estudiante.
         #Mostrar la información de todos los estudiantes.

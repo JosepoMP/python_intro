@@ -91,9 +91,6 @@ if __name__== "__main__":
 
 # Otra version del codigo
 
-
-# v2  Registro estudiantes
-
 # 1 - Agregar nuevo estudiante
 
 ```python

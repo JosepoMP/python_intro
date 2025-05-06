@@ -88,3 +88,133 @@ def main():
 if __name__== "__main__":
     main()
 ```
+
+# Otra version del codigo
+
+
+2 #ejercicio: Registro estudiantes
+
+# 1 - Agregar nuevo estudiante
+
+```python
+
+estudiantes = {}
+
+def agregar_estudiante():
+    nombre = input("Ingresa el nombre del estudiante: ")
+    if nombre in estudiantes: 
+        print("Este estudiante ya esta registrado. ")
+        return
+    edad = int(input("Ingresa la edad del estudiante: "))
+    numero = int(input("Ingresa el numero del estudiante: "))
+    calificacion = float(input("Ingresa la calificacion: "))
+    estudiantes[nombre] = {
+        "edad": edad, 
+        "numero": [numero],   # se guarda como lista 
+        "calificacion": calificacion   
+}
+    print(f"{nombre} ha sido agregado con exito. ")
+
+```
+
+# 2 - Modificar la calificacion de un estudiante
+    # Preguntar el nombre del estudiante.
+
+    # Verificar si ese nombre existe en el diccionario.
+
+    # Si existe, pedir la nueva calificación.
+
+    # Cambiar el valor asociado a "calificacion" en el subdiccionario.
+```python
+
+def modificar_calificacion():  
+    if estudiantes: 
+        print("Estudiantes registrados: ")
+        for nombre in estudiantes: 
+            print(f"- {nombre}")
+
+        nombre = input("Ingrese el nombre del estudiante que desea modificar: ")
+
+        if nombre in estudiantes: 
+            nueva_calificacion = float(input("Ingrese la nueva calificacion: "))
+            estudiantes[nombre]["calificacion"] = nueva_calificacion
+            print(f"Calificacion actualizada para {nombre}. ")
+        else: 
+            print("Ese estudiante no esta registrado. ")
+    else: 
+        print("No hay estudiantes registrados aun. ")
+```
+
+# 3 - Mostrar toda la informacion de todos los estudiantes
+    #   Recorrer el diccionario estudiantes y mostrar para cada estudiante:
+
+        #   Nombre
+
+        #   Edad
+
+        #   Número (aunque esté en una lista)
+
+        #   Calificación
+```python
+def mostrar_estudiantes():
+    if estudiantes: 
+        print("\Informacion de todos los estudiantes:\n")
+        for nombre, datos in estudiantes.items():
+            print(f"Nombre: {nombre}")
+            print(f"  Edad: {datos['edad']}")
+            print(f"  Numero: {datos['numero'][0]}")    # Extraemos el primer valor de la lista y accede al primer (y único) número en la lista.
+            print(f"  Calificacion: {datos['calificacion']}")
+            print("-" * 30)   # Se usa un separador para que la salida sea más clara entre estudiantes.
+    else:
+        print("No hay estudiantes para mostrar. ")
+```
+
+# 5 - Eliminar estudiante por su nombre 
+```python
+def eliminar_estudiantes():
+    if estudiantes:
+        print("Estudiantes registrados: ")
+        for nombre in estudiantes: 
+            print(f"- {nombre}")
+
+        nombre = input("Ingresa el nombre del estudiante que desea eliminar: ")
+
+        if nombre in estudiantes: 
+            del estudiantes[nombre]
+            print(f"{nombre} ha sido eliminado del registro. ")
+        else: 
+            print("Ese estudiante no esta registrado. ")
+    else: 
+        print("No hay estudiantes para eliminar. ")
+```
+
+# Menu principal 
+```python
+while True: 
+    print("\n --- Menú ---")
+    print("1. Agregar estudiante. ")
+    print("2. Modificar calificacion. ")
+    print("3. Mostrar todos los estudiantes. ")
+    print("4. Elimnar estudiantes. ")
+    print("5. Salir. ")
+
+    opcion = input("Selecciona una opcion: ")
+
+    if opcion == '1':
+        agregar_estudiante()
+    elif opcion == '2':
+        modificar_calificacion()
+    elif opcion == '3':
+        mostrar_estudiantes()
+    elif opcion == '4':
+        eliminar_estudiantes()
+    elif opcion == '5':
+        print("¡Adios!")
+        break 
+    else: 
+        print("Opcion no valida, intenta de nuevo. ")
+
+```
+
+
+

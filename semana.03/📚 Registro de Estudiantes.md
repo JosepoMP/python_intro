@@ -1,13 +1,13 @@
-Registro de Estudiantes
+# Registro de Estudiantes
 
 # Objetivo: 
 Crear un diccionario para almacenar información sobre estudiantes y realizar algunas operaciones básicas como agregar, modificar y mostrar datos.       
 
 # instrucciones:
 
-    1. Crea un diccionario llamado estudiantes, donde las claves sean los nombres de los estudiantes y los valores sean otro diccionario con las claves edad y calificacion.
+1. Crea un diccionario llamado estudiantes, donde las claves sean los nombres de los estudiantes y los valores sean otro diccionario con las claves edad y calificacion.
 
-    2. El programa debe permitir al usuario realizar las siguientes operaciones:
+2. El programa debe permitir al usuario realizar las siguientes operaciones:
         #Agregar un nuevo estudiante (nombre, edad, calificación).
         #Modificar la calificación de un estudiante.
         #Mostrar la información de todos los estudiantes.
@@ -92,7 +92,7 @@ if __name__== "__main__":
 # Otra version del codigo
 
 
-2 #ejercicio: Registro estudiantes
+# v2  Registro estudiantes
 
 # 1 - Agregar nuevo estudiante
 
@@ -118,13 +118,13 @@ def agregar_estudiante():
 ```
 
 # 2 - Modificar la calificacion de un estudiante
-    # Preguntar el nombre del estudiante.
+Preguntar el nombre del estudiante.
 
-    # Verificar si ese nombre existe en el diccionario.
+Verificar si ese nombre existe en el diccionario.
 
-    # Si existe, pedir la nueva calificación.
+Si existe, pedir la nueva calificación.
 
-    # Cambiar el valor asociado a "calificacion" en el subdiccionario.
+ Cambiar el valor asociado a "calificacion" en el subdiccionario.
 ```python
 
 def modificar_calificacion():  
@@ -146,15 +146,11 @@ def modificar_calificacion():
 ```
 
 # 3 - Mostrar toda la informacion de todos los estudiantes
-    #   Recorrer el diccionario estudiantes y mostrar para cada estudiante:
-
-        #   Nombre
-
-        #   Edad
-
-        #   Número (aunque esté en una lista)
-
-        #   Calificación
+Recorrer el diccionario estudiantes y mostrar para cada estudiante:
+        Nombre
+        Edad
+        Número (aunque esté en una lista)
+        Calificación
 ```python
 def mostrar_estudiantes():
     if estudiantes: 
@@ -190,6 +186,8 @@ def eliminar_estudiantes():
 
 # Menu principal 
 ```python
+# Menu principal
+
 while True: 
     print("\n --- Menú ---")
     print("1. Agregar estudiante. ")

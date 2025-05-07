@@ -1,16 +1,21 @@
-
-
-
 # 1 - Crear funcion para añadir producto
-# Ahora vamos a hacer una función que reciba tres parámetros: nombre, precio y cantidad, y lo guarde en el diccionario inventario
+Ahora vamos a hacer una función que reciba tres parámetros: nombre, precio y cantidad, y lo guarde en el diccionario inventario
 
     #   Validar que el nombre no esté ya en el inventario
     #   Asegurarse de que precio y cantidad sean válidos (números positivos)
     #   Manejar si el usuario pone algo incorrecto
-
+    
+```python
 def añadir_producto(inventario, nombre, precio, cantidad):
     if nombre in inventario:
-        print("El producto ya existe en el inventario")
+        print(f"⚠️ El producto {nombre} ya está en el inventario.")
+        respuesta = input("¿Desea añadir esta cantidad al producto ya existente? (si/no): ").strip().lower()
+        if respuesta == "si":
+            precio_actual, cantidad_actual = inventario[nombre]
+            inventario[nombre] = (precio_actual, cantidad_actual + cantidad)
+            print(f"✅ Se añadieron {cantidad} unidades al producto {nombre}. Total: {cantidad_actual + cantidad}.")
+        else: 
+            print("❌ Operación invalida. No se modificó el inventario.")
         return
     
     if not isinstance(precio, (int, float)) or precio <= 0:
@@ -23,21 +28,21 @@ def añadir_producto(inventario, nombre, precio, cantidad):
     
     inventario[nombre] = (precio, cantidad)
     print(f"producto '{nombre}' añadido correctamente. ")
-
+```
 
 
 # 2 - Consultar producto por nombre 
-# Esta función buscará un producto y mostrará su precio y cantidad. Si no existe, debe notificarlo.
-
+Esta función buscará un producto y mostrará su precio y cantidad. Si no existe, debe notificarlo.
+```python
 def consultar_producto(inventario, nombre):
     if nombre in inventario:
         precio, cantidad = inventario[nombre]
-        print(f"Producto: {nombre}")
-        print(f"Precio: ${precio}")
-        print(f"Cantidad disponible: {cantidad}")
+        print(f"🔍 Producto: {nombre}")
+        print(f"💲 Precio: ${precio}")
+        print(f"📦 Cantidad disponible: {cantidad}")
     else: 
         print(f"El producto'{nombre}' no esta en el inventario. ")
-
+```
 
 
 # 3 - Actualizar el precio de un producto.
@@ -45,7 +50,7 @@ def consultar_producto(inventario, nombre):
     #   Permitir al usuario cambiar el precio de un producto ya existente.
     #   Validar que el producto esté en el inventario.
     #   Validar que el nuevo precio sea válido (número positivo).
-
+```python
 def actualizar_precio(inventario, nombre, nuevo_precio):
     if nombre not in inventario:
         print(f"El producto '{nombre}' no está en el inventario. ")
@@ -58,28 +63,28 @@ def actualizar_precio(inventario, nombre, nuevo_precio):
     cantidad = inventario[nombre][1]
     inventario[nombre] = (nuevo_precio, cantidad)
     print(f"Precio de '{nombre}' actualizado a ${nuevo_precio}. ")
-
+```
 
 # 4 - Eliminar productos del inventario.
-# Eliminar un producto del inventario si existe. Si no existe, notificar al usuario.
-
+Eliminar un producto del inventario si existe. Si no existe, notificar al usuario.
+```python
 def eliminar_producto(inventario, nombre):
     if nombre in inventario: 
         del inventario[nombre]
-        print(f"Producto '{nombre}' ha sido eliminado del inventario. ")
+        print(f"🗑️ Producto '{nombre}' ha sido eliminado del inventario. ")
     else:
-        print(f"EL producto '{nombre}' no se encuentra en el inventario. ")
-
+        print(f"❌ EL producto '{nombre}' no se encuentra en el inventario. ")
+```
 
 # 5 - Calcular el valor total del inventario usando una función lambda.
-# Multiplicar el precio × cantidad de cada producto y sumar el total general del inventario.
-
+Multiplicar el precio × cantidad de cada producto y sumar el total general del inventario.
+```python
 def calcular_valor_total(inventario):
     valor_total = sum(map(lambda item: item[1][0] * item[1][1], inventario.items()))
     print(f"valor total del inventario: ${valor_total:.2f}")
-
+```
 # programa principal 
-
+```python
 def menu():
     inventario = {}
 
@@ -105,7 +110,14 @@ def menu():
             añadir_producto(inventario, nombre, precio, cantidad)
 
         elif opcion == "2":
-            nombre = input("Nombre del producto a consultar: ")
+            if not inventario:
+                print("No hay productos en el inventario. ")
+                continue
+            print("\n📋 Productos Disponibles: ")
+            for nombre in inventario:
+                print(f"- {nombre}")
+
+            nombre = input("Ingrese el nombre del producto a consultar: ")
             consultar_producto(inventario, nombre)
 
         elif opcion == "3": 
@@ -118,7 +130,7 @@ def menu():
             actualizar_precio(inventario, nombre, nuevo_precio)
 
         elif opcion == "4":
-            nombre = input("NOmbre del producto a actualizar: ")
+            nombre = input("Nombre del producto a eliminar: ")
             eliminar_producto(inventario, nombre)
 
         elif opcion == "5":
@@ -132,3 +144,4 @@ def menu():
 
 # ejecutar menu
 menu()
+```

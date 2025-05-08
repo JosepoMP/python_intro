@@ -1,7 +1,7 @@
 # Ejercicio: Gestión de Contactos
 # Objetivo:
 
-# Crea una pequeña agenda en donde se guardara el nombre, el celular, estado civil, genero, todo esto se guardara dentro de un lista para que tengamos una lista de contactos
+Crea una pequeña agenda en donde se guardara el nombre, el celular, estado civil, genero, todo esto se guardara dentro de un lista para que tengamos una lista de contactos
 
     # Agregar un nuevo contacto.
     # Buscar un contacto por su nombre o celular.
@@ -15,7 +15,7 @@
     # plus: a la hora de eliminar o modificar que me mustre los contactos existentes para asi verificar cual quiero modificar
 
 # 1 - Agregar contactos 
-
+```python
 contactos = {}
 
 def agregar_contacto():
@@ -33,9 +33,9 @@ def agregar_contacto():
     }
     print(f"✅ ¡{nombre} ha sido registrado con éxito!.")
 
-
+```
 # 2 - Mostrar contactos almacenados 
-
+```python
 def mostrar_contacto():
     if contactos:
         print("\n📒 Informacion de todos los contactos:\n")
@@ -45,9 +45,9 @@ def mostrar_contacto():
             print("-" * 30)
     else: 
         print("📭 No hay contactos registrados. ")
-
+```
 # 3 - Modificar un contacto en especifico
-
+```python
 def modificar_contacto():
     if not contactos: 
         print("📭 No hay contactos registrados aún.")
@@ -94,10 +94,10 @@ def modificar_contacto():
     else: 
         print("❌ Opción inválida.")
 
-
+```
 
 # 4 - Eliminar un contacto
-
+```python
 def eliminar_contacto():
     if contactos: 
         print("Contactos registrados: ")
@@ -113,9 +113,9 @@ def eliminar_contacto():
             print("❌ Ese contacto no esta registrado. ")
     else: 
         print("📭 No hay contactos para eliminar")
-
+```
 # Menu principal 
-
+```python
 while True:
     print("\n--- Menu ---")
     print("1. Agregar contacto ")
@@ -139,3 +139,4 @@ while True:
         break
     else:
         print("Opcion no valida, intenta de nuevo. ")
+```

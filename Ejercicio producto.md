@@ -58,7 +58,18 @@ def delete_product():
 
 def calculate_total_value():
     total = sum(p["price"] * p["quantity"] for p in inventory.values())
-    print(f"Total inventory value: {total}")
+    print(f"Total inventory value: ${total:.2f}")
+
+def show_all_products():
+    if not inventory:
+        print("Inventory is empty.")
+        return
+
+    print("\n--- Current Inventory ---")
+    print(f"{'Product':<10} {'Price':>10} {'Quantity':>10}")
+    print("-" * 32)
+    for name, info in inventory.items():
+        print(f"{name:<10} {info['price']:>10.2f} {info['quantity']:>10}")
 
 def show_menu():
     print("\n--- Inventory Menu ---")
@@ -67,12 +78,13 @@ def show_menu():
     print("3. Update product price")
     print("4. Delete product")
     print("5. Calculate total inventory value")
-    print("6. Exit")
+    print("6. Show all products")
+    print("7. Exit")
 
 def main():
     while True:
         show_menu()
-        option = input("Choose an option (1-6): ")
+        option = input("Choose an option (1-7): ")
         if option == "1":
             add_product()
         elif option == "2":
@@ -84,6 +96,8 @@ def main():
         elif option == "5":
             calculate_total_value()
         elif option == "6":
+            show_all_products()
+        elif option == "7":
             print("Exiting program.")
             break
         else:
@@ -92,12 +106,10 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-Perfecto. Aquí tienes un archivo README.md listo para tu proyecto:
-
 
 ---
 
-README.md
+Archivo: README.md
 
 # Inventory Management System
 
@@ -110,80 +122,7 @@ This Python program is a simple command-line inventory management system. It all
 - Update the price of a product
 - Delete a product from the inventory (with confirmation)
 - Calculate and display the total value of the inventory
-
-The program starts with 5 preloaded products and uses a menu-based interface for user interaction.
-
-## Initial Inventory
-
-```python
-    
-inventory = {
-    'rice': {"price": 20.0, "quantity": 3},
-    'pear': {"price": 12.0, "quantity": 5},
-    'apple': {"price": 11.0, "quantity": 2},
-    'juice': {"price": 5.0, "quantity": 3},
-    'oil': {"price": 10.0, "quantity": 4}
-}
-
-Requirements
-
-Python 3.x
-
-
-How to Run
-
-1. Make sure you have Python 3 installed.
-
-
-2. Download the inventario.py file.
-
-
-3. Open a terminal and navigate to the folder where the file is located.
-
-
-4. Run the program with:
-
-
-
-python inventario.py
-
-Sample Usage
-
-Example 1: Add Product
-
-Enter product name: milk
-Enter product price: 15.0
-Enter product quantity: 6
-Product 'milk' added.
-
-Example 2: View Product
-
-Enter product name to search: rice
-Rice - Price: 20.0, Quantity: 3
-
-Example 3: Update Price
-
-Enter product name to update price: oil
-
-
-Perfecto. Aquí tienes un archivo README.md listo para tu proyecto:
-
-
----
-
-README.md
-
-# Inventory Management System
-
-## Description
-
-This Python program is a simple command-line inventory management system. It allows users to:
-
-- Add products to the inventory
-- View information about a specific product
-- Update the price of a product
-- Delete a product from the inventory (with confirmation)
-- Calculate and display the total value of the inventory
+- Display all products in a well-formatted list
 
 The program starts with 5 preloaded products and uses a menu-based interface for user interaction.
 
@@ -208,7 +147,7 @@ How to Run
 1. Make sure you have Python 3 installed.
 
 
-2. Download the inventario.py file.
+2. Save the inventario.py file.
 
 
 3. Open a terminal and navigate to the folder where the file is located.
@@ -222,30 +161,52 @@ python inventario.py
 
 Sample Usage
 
-Example 1: Add Product
+Example: Add Product
 
 Enter product name: milk
 Enter product price: 15.0
 Enter product quantity: 6
 Product 'milk' added.
 
-Example 2: View Product
+Example: View Product
 
 Enter product name to search: rice
 Rice - Price: 20.0, Quantity: 3
 
-Example 3: Update Price
+Example: Update Price
 
 Enter product name to update price: oil
 Enter new price: 12
 Price of 'oil' updated.
 
-Example 4: Delete Product
+Example: Delete Product
 
 Enter product name to delete: juice
 Are you sure you want to delete 'juice'? (yes/no): yes
 Product 'juice' deleted.
 
-Example 5: Calculate Total Inventory Value
+Example: Show All Products
+
+--- Current Inventory ---
+Product         Price   Quantity
+--------------------------------
+rice            20.00          3
+pear            12.00          5
+apple           11.00          2
+juice            5.00          3
+oil             10.00          4
+
+Example: Calculate Total Inventory Value
 
 Total inventory value: $281.00
+
+Author
+
+Your Name
+Course: [Course Name]
+Date: [Submission Date]
+
+---
+
+¿Quieres que traduzca el `README.md` al español o lo dejamos completamente en inglés como lo exige el ejercicio?
+

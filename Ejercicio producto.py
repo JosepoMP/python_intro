@@ -92,3 +92,77 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+Perfecto. Aquí tienes un archivo README.md listo para tu proyecto:
+
+
+---
+
+README.md
+
+# Inventory Management System
+
+## Description
+
+This Python program is a simple command-line inventory management system. It allows users to:
+
+- Add products to the inventory
+- View information about a specific product
+- Update the price of a product
+- Delete a product from the inventory (with confirmation)
+- Calculate and display the total value of the inventory
+
+The program starts with 5 preloaded products and uses a menu-based interface for user interaction.
+
+## Initial Inventory
+
+```python
+    
+inventory = {
+    'rice': {"price": 20.0, "quantity": 3},
+    'pear': {"price": 12.0, "quantity": 5},
+    'apple': {"price": 11.0, "quantity": 2},
+    'juice': {"price": 5.0, "quantity": 3},
+    'oil': {"price": 10.0, "quantity": 4}
+}
+
+Requirements
+
+Python 3.x
+
+
+How to Run
+
+1. Make sure you have Python 3 installed.
+
+
+2. Download the inventario.py file.
+
+
+3. Open a terminal and navigate to the folder where the file is located.
+
+
+4. Run the program with:
+
+
+
+python inventario.py
+
+Sample Usage
+
+Example 1: Add Product
+
+Enter product name: milk
+Enter product price: 15.0
+Enter product quantity: 6
+Product 'milk' added.
+
+Example 2: View Product
+
+Enter product name to search: rice
+Rice - Price: 20.0, Quantity: 3
+
+Example 3: Update Price
+
+Enter product name to update price: oil
+
+

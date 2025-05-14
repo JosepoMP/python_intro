@@ -150,23 +150,23 @@ if __name__ == "__main__":
 # Simple usage 
 
 # Explame 1: Add a product
-# Enter product name: Milk
-# enter product price: 15.0
-# Enter product quantity: 6
-# Product 'milk' added correclty. 
+    Enter product name: Milk
+    enter product price: 15.0
+    Enter product quantity: 6
+    Product 'milk' added correclty. 
 
 # Example 2: View Product
-# Enter product name to search: rice
-# Rice - Price: 20.0, Quantity: 3
+    Enter product name to search: rice
+    Rice - Price: 20.0, Quantity: 3
 
 # Example 3: update price 
 
-# Enter product name to update price: oil
-# Enter new price: 12
-# Price of 'oil' updated.
+    Enter product name to update price: oil
+    Enter new price: 12
+    Price of 'oil' updated.
 
 # Example 4: Delete Product
 
-# Enter product name to delete: juice
-# Are you sure you want to delete 'juice'? (yes/no): yes
-# Product 'juice' deleted.
+    Enter product name to delete: juice
+    Are you sure you want to delete 'juice'? (yes/no): yes
+    roduct 'juice' deleted.

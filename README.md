@@ -63,8 +63,8 @@ Me gusta mantener todo claro, organizado y con comentarios que me ayuden a enten
 
 **Jose Patiño (JosepoMP)**  
 🔗 [GitHub](https://github.com/JosepoMP)  
-📸 [Instagram](https://www.instagram.com/josepatinomp/)  
-📧 [josepatinomp@gmail.com](mailto:josepatinomp@gmail.com)
+📸 [Instagram](https://www.instagram.com/josemig.p/)  
+📧 [josepatinohincapie@gmail.com](mailto:josepatinohincapie@gmail.com)
 
 ---
 

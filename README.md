@@ -1,99 +1,71 @@
-<h1 align="center">🧠 python_intro</h1>
+<h1 align="center">🐍 python_intro</h1>
+<p align="center">
+  <strong>Aprendiendo Python paso a paso, con estilo.</strong><br>
+  📚 Ejercicios, mini proyectos y entregables de mis primeras semanas programando en Python.
+</p>
 
 <p align="center">
-  💻 Repositorio de prácticas, entregables y ejercicios introductorios en <strong>Python</strong><br>
-  📚 Ideal para afianzar lógica, estructuras de datos y manejo de errores<br>
-  ✨ Con un enfoque divertido, funcional y muy humano.
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Estado-En%20Desarrollo-yellow" />
+  <img src="https://img.shields.io/badge/Autor-JosepoMP-orange" />
 </p>
 
 ---
 
-### 📌 Descripción general
+## 🧠 Sobre este repositorio
 
-Este repositorio contiene mi aprendizaje práctico de Python desde cero.  
-Aquí podrás encontrar scripts que resuelven problemas cotidianos, entregables semanales y mini-sistemas interactivos.
+Este repositorio contiene mis primeras prácticas con **Python**, desde conceptos básicos como condicionales, bucles y listas, hasta pequeñas soluciones más complejas como sistemas de inventario, gestión de estudiantes o manejo de archivos.  
+Todo fue trabajado como parte de retos semanales y pruebas de desempeño.
 
-Aprender Python no solo es escribir código... ¡es razonar con él! 😄
-
----
-
-### 🗃️ Estructura del repositorio
-
-| Archivo / Proyecto                        | ¿Qué hace?                                                                 |
-|-------------------------------------------|-----------------------------------------------------------------------------|
-| `Entregable-semana-01.py`                | Sistema de gestión de inventario 🛒 (agrega, consulta, actualiza, elimina, calcula total). |
-| `Entregable-semana-03.py`                | 4 ejercicios prácticos con validación de notas y cálculos de promedios 📊. |
-| `Ejercicio-01.py` a `Ejercicio-03.py`    | Prácticas de estructuras de control y listas en bucles interactivos 🔁.    |
-| `gestion de contactos.py`                | Gestión básica de contactos: agregar, buscar y eliminar personas 📇.       |
-| `📚 Registro de Estudiantes.py`          | Simula el registro académico de estudiantes con calificaciones y control 🎓. |
-| `🐾 Gestión de Animales.py`              | Manejo de datos de animales para adopción, ingreso y control veterinario 🐶. |
+Cada script está comentado y pensado para reforzar la lógica de programación de manera clara y divertida.
 
 ---
 
-### 🚀 ¿Qué se practica aquí?
-
-- Condicionales `if`, `else`, `elif`
-- Ciclos `while`, `for`
-- Manejo de excepciones con `try/except`
-- Funciones definidas por el usuario
-- Listas, diccionarios y estructuras anidadas
-- Interacción por consola
-- Simulación de pequeños sistemas
-
----
-
-### ⚙️ Cómo ejecutar
-
-Asegúrate de tener Python instalado en tu equipo.  
-Desde tu terminal:
+## 📂 Estructura del repositorio
 
 ```bash
-git clone https://github.com/JosepoMP/python_intro.git
-cd python_intro
-python nombre_del_script.py
+python_intro/
+│
+├── Semana-01/
+│   └── Entregable-semana-01.py       # Inventario de productos (menú interactivo)
+│
+├── Semana-02/
+│   └── Entregable-semana-02.py       # Scripts con validaciones y manejo de errores
+│
+├── semana.03/
+│   └── Entregable-semana-03.py       # Ejercicios con listas y estadísticas
+│
+├── Ejercicio-01.py                   # Aprobado o reprobado según nota
+├── Ejercicio-02.py                   # Promedio de notas
+├── Ejercicio-03.py                   # Notas mayores a un valor
+
 ```
+## 🚀 ¿Por qué este proyecto?
+
+Porque aprender programando es mil veces más efectivo 💥  
+Y porque cada ejercicio es un paso más hacia ser un desarrollador más completo.
+
+Me gusta mantener todo claro, organizado y con comentarios que me ayuden a entender el **"por qué"** del código, no solo el **"cómo"**.
 
 ---
 
-### 🧪 Ejemplos de uso
+## ⚙️ Tecnologías utilizadas
 
-```bash
-# ✅ Agregar producto
-Nombre: Leche
-Precio: 15.0
-Cantidad: 6
-
-# 📎 Consultar producto
-Producto: arroz
-Respuesta: arroz - Precio: 20.0, Cantidad: 2
-
-# 🧮 Calcular promedio
-Entrada: 80, 90, 100
-Promedio: 90.0
-```
+- [Python 3.10](https://www.python.org/downloads/)
+- Lógica de programación
+- Buenas prácticas de código
+- Pensamiento computacional
+- Visual Studio Code
 
 ---
 
-### 🎯 Estado del proyecto
+## 🙋‍♂️ Autor
 
-> 💡 Este repo está en constante evolución a medida que aprendo y practico.  
-> Más adelante incluiré proyectos con interfaces gráficas, manejo de archivos y uso de librerías externas.
-
----
-
-### 📫 Contacto
-
-¿Quieres compartir ideas o colaborar?  
-¡Me puedes encontrar en mis redes!
-
-<p align="center">
-  <a href="https://www.instagram.com/josepatinomp/"><img src="https://img.shields.io/badge/Instagram-JosepoMP-DD2476?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/josepatinomp/"><img src="https://img.shields.io/badge/LinkedIn-JosepoMP-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="mailto:josepatinomp@gmail.com"><img src="https://img.shields.io/badge/Gmail-josepatinomp@gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-</p>
+**Jose Patiño (JosepoMP)**  
+🔗 [GitHub](https://github.com/JosepoMP)  
+📸 [Instagram](https://www.instagram.com/josepatinomp/)  
+📧 [josepatinomp@gmail.com](mailto:josepatinomp@gmail.com)
 
 ---
 
-<p align="center">
-  Hecho con 💻 y ☕ por <strong>Jose Patiño</strong> — 2025
-</p>
+> 🧡 *"La lógica es solo el principio. Programar también es crear, imaginar y resolver con pasión."*
